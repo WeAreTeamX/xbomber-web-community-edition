@@ -72,8 +72,8 @@ Xbomber is the pioneer of sms and call bombers in Bangladesh. For a long time, t
 ### Built With
 
 * [Bootstrap](https://getbootstrap.com)
+* [Bootstrap Icons](https://icons.getbootstrap.com)
 * [JQuery](https://jquery.com)
-* [Fontawesome Icons](https://fontawesome.com)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -82,7 +82,7 @@ Xbomber is the pioneer of sms and call bombers in Bangladesh. For a long time, t
 <!-- GETTING STARTED -->
 ## Getting Started
 
-The community edition of Xbomber is not dynamic website. It means, you can use this website files directly in any of the static website hosting services (Ex. Github Pages). :smile:
+The community edition of Xbomber is not a dynamic website. It means, you can use this website files directly in any of the ***static website*** hosting services (Ex. Github Pages).
 
 ### Using Github Pages
 
