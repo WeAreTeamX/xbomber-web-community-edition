@@ -1,0 +1,23 @@
+body{
+	background: #383a3d;
+	padding-top: 10vh;	
+}
+form{
+	background: rgb(0, 0, 0);
+}
+.form{
+	background: rgb(0, 0, 0);
+}
+.form-container{
+	border-radius: 10px;
+	padding: 30px;
+}
+.status{
+    display: none;
+}
+
+h5{
+    text-align: center;
+    color: #fff
+}
+
