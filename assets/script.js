@@ -48,7 +48,7 @@ $(document).ready(() => {
             // $('#logs').text("Processing Bombing Request...");
 
             
-            fetch("/assets/apis.json")
+            fetch("assets/apis.json")
                 .then(r => r.json())
                 .then(r => {
                     const APIS = r.apis;
